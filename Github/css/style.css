@@ -1,0 +1,178 @@
+/*
+    Documento CSS da página principal
+
+    Paleta de cores:
+    #0F0F0F - Preto
+    #162F33 - Azul Marinho
+    #FFFFFF - Branco
+    #C7C7C7 - Cinza Claro
+    #404040 - Cinza Escuro
+
+*/
+
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{ 
+    background-color: #C7C7C7;
+}
+
+
+/*Inicio do cabeçalho */
+
+
+header { /*Tag pricipal do cabeçalho*/
+    padding-left: 30px;
+    display: flex;
+    background-color: #FFFFFF;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    box-shadow: 1px 1px 1px 1px #b1b1b1;
+}
+
+.logo /*configuração da logo */{
+    height: 110px;
+    width: 110px;
+}
+
+.SearchBox input /*Configuração do campo de texto e do botão da barra de pesquisas*/{
+    margin-top: 25px;
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.SearchBoxText /*Configuração do campo de texto da barra de pesquisas*/{
+    position: relative;
+    border-radius: 0px 25px 25px 0px;
+    padding: 0 25px;
+    outline: 0;
+    border: #C7C7C7 1px solid;
+    border-left: 0;
+    background: #FFFFFF;
+    height: 48px;
+    max-width: 400px;
+}
+
+.SearchBox /*Configuração da div da barra de pesquisas*/{
+    text-align: right;
+    width: 55%;
+}
+
+.SearchBoxButton /*Configuração do botão da barra de pesquisas */{
+    background: #FFFFFF;
+    background-image: url(../imgs/searchIco.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    left: 5px;
+    cursor: pointer;
+    border-radius: 25px 0px 0px 25px;
+    position: relative;
+    border: #C7C7C7 1px solid;
+    border-right: 0;
+    outline: 0;
+    height: 48px;
+    width: 48px;
+}
+
+.SearchBoxButton:hover /*Hover do botão da barra de pesquisas */{
+    background-color: #162F33;
+    background-image: url(../imgs/searchIcoWhite.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transition: .2s;
+}
+
+#cartBox /*Configuração do botão do carrinho*/{ 
+    padding-top: 40px;
+    border: 0;
+    background-color: #ffffff00;
+    cursor: pointer;
+    padding-left: 0px;
+    border-radius: 10px;
+    background-image: url(../imgs/cartIco.png);
+    background-repeat: no-repeat;
+    background-position: 40% 20%;
+    margin-left: 75px;
+    margin-top: 20px;
+    height: 60px;
+    width: 100px;
+    font-size: 13px;
+    color: #162F33;
+}
+
+#cartBox:hover /*Hover do botão do carrinho*/ {
+    color: #FFFFFF;
+    background-image: url(../imgs/cartIcoWhite.png);
+    background-repeat: no-repeat;
+    background-position: 40% 20%;
+    background-color: #162F33;
+    transition: .2s;
+}
+#userBox /*Configuração do botão do usuário/login*/{
+    border-radius: 10px;
+    background-color: #ffffff00;
+    background-image: url(../imgs/userIco.png);
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    padding-top: 40px;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: 20px;
+    height: 60px;
+    border: 0;
+    width: 120px;
+}
+
+#userBox:hover /*Hover do botão do usuário/login*/{
+    color: #FFFFFF;
+    background-image: url(../imgs/userIcoWhite.png);
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-color: #162F33;
+    transition: .2s;
+}
+
+
+/*Final do cabeçalho */
+
+
+/*Inicio da barra de navegação */
+
+
+nav /*Tag principal da barra de  navegação*/{
+    font-size: large;
+    padding: 5px;
+    display: flex;
+    height: 40px;
+    background-color: #162F33;
+    width: 100%;
+    justify-content: space-around;
+}
+nav ul /*Configuração da lista da barra de navegação*/{
+    gap: 25px;
+    display: flex;
+    padding: 0;   
+    list-style: none;
+    color: #FAF7FB;
+}
+
+.navLink /*Configuração do link da barra de navegação*/{
+    color: #FAF7FB;
+    text-decoration: none;
+}
+
+.navLink:hover /*Hover do link da barra de navegação*/{
+    color: #C7C7C7;
+    transition: .2s;
+}
+
+/*Final da barra de navegação */
