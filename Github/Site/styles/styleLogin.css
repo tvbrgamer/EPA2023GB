@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    gap: 50px;
+    padding: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(90deg, #FAF7FB 0%, rgba(247, 174, 174, 0.308) 50%, #FAF7FB 100%);
+}
+h2{color: rgb(175, 34, 34);}
+
+#tela-Principal h1 {
+   text-align: center;
+}
+#tela-Principal {
+    height: 400px; width: 400px;
+    border: solid black 3px;
+    border-radius: 25px;
+    padding: 15px;
+    background-color: white;
+
+}
+
+#tela-Img {
+    box-shadow: 2px 2px 2px 2px #c2cbce;
+    border-radius: 50px;
+    
+
+}
+
+#login-Box {
+    display: inline;
+}
+
+.txtLogin {
+    margin-bottom: 20px;
+}
