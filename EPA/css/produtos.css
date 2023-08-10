@@ -1,8 +1,14 @@
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
 #product-Container {
     display: table;
     height: 100%;
-    width: 100vw;
+    max-height: 700px;
 }
+
 /* Descrição do produto */
 
 #leftDiv {
@@ -10,47 +16,61 @@
     width: 25%;
 }
 
-#product-Name{
+#product-Name {
     font-size: 140%;
     font-weight: 650;
 }
 
-#product-Ref{
+#product-Ref {
     font-size: 80%;
     font-weight: 450;
 }
 
-#product-Rate{
+#product-Rate {
     font-size: 150%;
     font-weight: 700;
 }
 
-#caracteristicasUl{
+#caracteristicasUl {
     font-size: 70%;
 }
 
-#compartilheTxt{
+#compartilheTxt {
     font-size: 80%;
     font-weight: 700;
 }
 
-#iconsMedia{
+#iconsMedia {
     display: flex;
     justify-content: left;
     gap: 10px;
 }
 
-.icon{
+.icon {
     background-color: aqua;
     width: 25px;
     height: 25px;
     border-radius: 50px;
 }
 
+/* Compo das imagens :) */
 
 #imagesDiv {
     display: table-cell;
     width: 45%;
+    height: 100%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+#mainImage{
+    background-color: rgb(53, 182, 139);
+    height: 90%;
+}
+
+#previewImages-Container {
+    background-color: rgb(182, 16, 11);
+    height: 10%;
 }
 
 #rightDiv {
@@ -58,10 +78,12 @@
     width: 30%;
 }
 
-.fontBold{
+/* nada especifico */
+
+.fontBold {
     font-weight: 600;
 }
 
-.fontBlue{
+.fontBlue {
     color: rgb(14, 139, 139);
 }
