@@ -13,7 +13,6 @@ body{
 
 #leftDiv {
     display: table-cell;
-    height: 100%;
     width: 25%;
 }
 
@@ -32,13 +31,8 @@ body{
     font-weight: 700;
 }
 
-#caracteristicasDiv{
-    padding: 10%;
-}
-
 #caracteristicasUl {
     font-size: 70%;
-    list-style: none;
 }
 
 #compartilheTxt {
@@ -71,128 +65,17 @@ body{
 
 #mainImage{
     background-color: rgb(53, 182, 139);
-    width: 100%;
-    padding-bottom: 75%;
+    height: 90%;
 }
 
 #previewImages-Container {
     background-color: rgb(182, 16, 11);
-    height: 20%;
-    max-height: 65px;
+    height: 10%;
 }
-
-/* Div direita*/
 
 #rightDiv {
     display: table-cell;
     width: 30%;
-}
-
-#oldPrice{
-    font-size: 70%;
-    text-decoration:line-through;
-    color: rgb(109, 109, 109);
-}
-
-#newPrice-Div{
-    width: 100%;
-}
-
-#newPrice-pix{
-    display: flex;
-}
-
-#newPrice-pix h1{
-    font-size: 150%;
-    -webkit-text-stroke-color: gray;
-    -webkit-text-stroke-width: 0.5px;
-}
-
-#pixTxt{
-    font-size: 70%;
-    -webkit-text-stroke-color: gray;
-    -webkit-text-stroke-width: 0.5px;
-    margin-left: 1%;
-    margin-top: 5%;
-}
-
-#parcelaTxt{
-    font-size: 100%;
-    font-weight: 500;
-}
-
-#selecionarCores{
-    height: 10%;
-    background-color: aqua;
-}
-
-#corTxt{
-    font-weight: 400;
-}
-
-#coresSelect{
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4%;
-}
-
-.imageCores{
-    aspect-ratio: 1/1;
-    margin-top: 5px;
-    width: 15%;
-    background-color: blue;
-}
-
-#selecionarTamanhos{
-    height: 10%;
-    background-color: bisque;
-}
-
-#tamanhoTxt{
-    font-weight: 400;
-}
-
-#tamanhosSelect{
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
-}
-
-.tamanhoIcon{
-    aspect-ratio: 1/1;
-    margin-top: 5px;
-    width: 8%;
-    background-color: blue;
-    border-radius: 50px;
-}
-
-#buyFav{
-    display: flex;
-    width: 100%;
-    gap: 5%;
-    margin-top: 5%;
-}
-
-#comprarButton{
-    width: 60%;
-    font-size: 100%;
-    border-radius: 5px;
-    padding: 4%;
-    border: 0;
-    font-family: "Trebuchet MS",Arial,sans-serif;
-    font-weight: 500;
-    background: #ff691e;
-    color: #fff;
-    cursor: pointer;
-}
-
-#favoritoButton{
-    width: 20%;
-    aspect-ratio: 1/1;
-    border-radius: 100%;
-    background-color: blue;
 }
 
 /* nada especifico */
@@ -202,5 +85,5 @@ body{
 }
 
 .fontBlue {
-    color: rgb(25, 131, 170);
+    color: rgb(14, 139, 139);
 }
