@@ -1,128 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>1IKE - Página Inicial</title>
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/hefooter.css">
-    <link rel="stylesheet" href="./css/produtos.css">
-</head>
-
-<body>
-    <header> <!--Cabeçalho da página-->
-        <a href="index.html"><img src="./img/like_logo.png" alt="L1ke-Logo" class="logo"></a> <!--Logo-->
-        <div class="SearchBox"> <!--Barra de pesquisas-->
-            <form>
-                <input type="submit" value=" " class="SearchBoxButton">
-                <input type="text" placeholder="Pesquise Aqui..." class="SearchBoxText">
-            </form>
-        </div>
-        <button type="button" id="cartBox"> <!--Botão do carrinho-->
-            Carrinho
-        </button>
-        <button type="button" id="userBox" onclick="loginPage()"> <!--Botão do usuário/login-->
-            Faça seu login
-        </button>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/produtos.css" />
+  </head>
+  <body>
+    <header>
+      <!--Cabeçalho da página-->
+      <a href="index.html"
+        ><img src="./img/like_logo.png" alt="L1ke-Logo" class="logo"
+      /></a>
+      <!--Logo-->
+      <div class="SearchBox">
+        <!--Barra de pesquisas-->
+        <form>
+          <input type="submit" value=" " class="SearchBoxButton" />
+          <input
+            type="text"
+            placeholder="Pesquise Aqui..."
+            class="SearchBoxText"
+          />
+        </form>
+      </div>
+      <button type="button" id="cartBox">
+        <!--Botão do carrinho-->
+        Carrinho
+      </button>
+      <button type="button" id="userBox" onclick="loginPage()">
+        <!--Botão do usuário/login-->
+        Faça seu login
+      </button>
     </header>
-    <nav> <!--Barra de navegação do site-->
-        <ul> <!--Links para as páginas-->
-            <li>
-                <a href="" class="navLink">
-                    <h3><b>Ofertas</b></h3>
-                </a>
-            </li>
-            <li>
-                <a href="" class="navLink">
-                    <h3>Homem</h3>
-                </a>
-            </li>
-            <li>
-                <a href="" class="navLink">
-                    <h3>Mulher</h3>
-                </a>
-            </li>
-            <li>
-                <a href="" class="navLink">
-                    <h3>Infantil</h3>
-                </a>
-            </li>
-            <li>
-                <a href="" class="navLink">
-                    <h3>Acessórios</h3>
-                </a>
-            </li>
-        </ul>
+    <nav>
+      <!--Barra de navegação do site-->
+      <ul>
+        <!--Links para as páginas-->
+        <li>
+          <a href="" class="navLink"
+            ><h3><b>Ofertas</b></h3></a
+          >
+        </li>
+        <li>
+          <a href="" class="navLink"><h3>Homem</h3></a>
+        </li>
+        <li>
+          <a href="" class="navLink"><h3>Mulher</h3></a>
+        </li>
+        <li>
+          <a href="" class="navLink"><h3>Infantil</h3></a>
+        </li>
+        <li>
+          <a href="" class="navLink"><h3>Acessórios</h3></a>
+        </li>
+      </ul>
     </nav>
 
-    <div id="product-Container">
+    <div id="leftDiv">
+      <h1>Tênis Mizuno Wave Titan 2 - Preto</h1>
 
-        <div id="leftDiv">
+      <h4 id="ref">Ref.:2FU-6367-006-35</h4>
 
-            <p id="product-Name">Tênis Mizuno Wave Titan 2 - Preto</p>
+      <div id="starsDiv">
+        <h1>4.42</h1>
+        <h5>2783 avaliações</h5>
+      </div>
 
-            <p id="product-Ref">Ref.:2FU-6367-006-35</p>
+      <div id="caracteristicas">
+        <p><span class="gray">Indicado para: </span>Dia a Dia</p>
+        <p><span class="gray">Material: </span>Têxtil e Sintético</p>
+        <p><span class="gray">Categoria: </span>Caminhada</p>
+        <p>
+          <span class="gray">Composição:</span>Cabedal: Têxtil com tiras
+          sintéticas, calcanhar acolchoado e fecho em cadarço; Entressola: EVA;
+          Solado: Borracha
+        </p>
+        <p><span class="gray">Tecnologia: </span>Wave</p>
+        <p><span class="gray">Pisada: </span>Neutra</p>
 
-            <div id="ratingDiv">
+        <p><span class="blue">Ver Mais</span></p>
+      </div>
 
-                <p id="product-Rate">4.42</p>
-                <h6><span class="fontBlue">2783 avaliações</span></h6>
+      <div id="SocialMedia">
+        <p>Compartilhe o produto!</p>
+        <div id="iconsContainer"></div>
+      </div>
+    </div>
 
-            </div>
+    <div id="productDiv">
+      <div id="preview">
+        <div id="upArrow"></div>
 
-            <div id="caracteristicasDiv">
+        <div class="miniExib"></div>
+        <div class="miniExib"></div>
+        <div class="miniExib"></div>
+        <div class="miniExib"></div>
 
-                <ul id="caracteristicasUl">
-                    <li><span class="fontBold">Indicado para: </span>Dia a Dia</li>
-                    <li><span class="fontBold">Material: </span>Têxtil e Sintético</li>
-                    <li><span class="fontBold">Categoria: </span>Caminhada</li>
-                    <li><span class="fontBold">Composição: </span>Cabedal: Têxtil com tiras sintéticas, calcanhar
-                        acolchoado e fecho em cadarço; Entressola: EVA; Solado: Borracha</li>
-                    <li><span class="fontBold">Tecnologia: </span>Wave</li>
-                    <li><span class="fontBold">Pisada: </span>Neutra</li>
-                </ul>
+        <div id="downArrow"></div>
+      </div>
 
-            </div>
-
-            <div id="shareMedia">
-
-                <p id="compartilheTxt">Compartilhe o produto!</p>
-
-                <div id="iconsMedia">
-
-                    <div class="icon" id=""></div>
-                    <div class="icon" id=""></div>
-                    <div class="icon" id=""></div>
-                    <div class="icon" id=""></div>
-                    <div class="icon" id=""></div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div id="imagesDiv">
-
-            <div id="mainImage"> &nbsp; </div>
-
-            <div id="previewImages-Container">
-
-                <div id="upArrow"></div>
-
-                <div class="previewImage"></div>
-                <div class="previewImage"></div>
-                <div class="previewImage"></div>
-                <div class="previewImage"></div>
-
-                <div id="downArrow"></div>
-
-            </div>
-
-
-        </div>
+      <div id="mainPic"></div>
+    </div>
 
         <div id="rightDiv">
 
@@ -132,24 +113,22 @@
 
                 <div id="newPrice-Div">
 
-                    <div id="newPrice-pix">
-                        <h1><span class="fontBlue">R$ 215,99</span></h1>
-                        <h4 id="pixTxt"><span class="fontBlue">no Pix</span></h4>
-                    </div>
+                    <h1><span id="fontBlue">R$ 215,99</span></h1>
+                    <h4 id="pixTxt">no Pix</h4>
 
-                    <h3 id="parcelaTxt"><span class="fontBlue">ou R$ 239,99 em até 4x sem juros</span></h3>
+                    <h3>ou R$ 239,99 em até 4x sem juros</h3>
 
                     <div id="selecionarCores">
 
-                        <h5 id="corTxt"><span class="fontBold">Cor: </span>Preto</h5>
+                        <h4><span class="fontBold">Cor: </span>Preto</h4>
 
                         <div id="coresSelect">
 
-                            <div class="imageCores">&nbsp;</div>
-                            <div class="imageCores">&nbsp;</div>
-                            <div class="imageCores">&nbsp;</div>
-                            <div class="imageCores">&nbsp;</div>
-                            <div class="imageCores">&nbsp;</div>
+                            <div class="imageCores"></div>
+                            <div class="imageCores"></div>
+                            <div class="imageCores"></div>
+                            <div class="imageCores"></div>
+                            <div class="imageCores"></div>
 
                         </div>
 
@@ -157,29 +136,28 @@
 
                     <div id="selecionarTamanhos">
 
-                        <h3 id="tamanhoTxt"><span class="fontBold">Tamanho: </span></h3>
+                        <h3><span class="fontBold">Tamanho: </span></h3>
 
-                        <div id="tamanhosSelect">
+                        <div id="tamanhosSelect"></div>
 
-                            <div class="tamanhoIcon">&nbsp;</div>
-                            <div class="tamanhoIcon">&nbsp;</div>
-                            <div class="tamanhoIcon">&nbsp;</div>
-                            <div class="tamanhoIcon">&nbsp;</div>
-                            <div class="tamanhoIcon">&nbsp;</div>
-                            <div class="tamanhoIcon">&nbsp;</div>
-                            <div class="tamanhoIcon">&nbsp;</div>
-                            <div class="tamanhoIcon">&nbsp;</div>
-                            <div class="tamanhoIcon">&nbsp;</div>
-                            <div class="tamanhoIcon">&nbsp;</div>
-                        
-                        </div>
+                        <div class="tamanhoIcon"></div>
+                        <div class="tamanhoIcon"></div>
+                        <div class="tamanhoIcon"></div>
+                        <div class="tamanhoIcon"></div>
+                        <div class="tamanhoIcon"></div>
+                        <div class="tamanhoIcon"></div>
+                        <div class="tamanhoIcon"></div>
+                        <div class="tamanhoIcon"></div>
+                        <div class="tamanhoIcon"></div>
+                        <div class="tamanhoIcon"></div>
+
                     </div>
 
                     <div id="buyFav">
 
-                        <button id="comprarButton">COMPRAR</button>
+                        <button id="Comprar">Comprar</button>
 
-                        <div id="favoritoButton">&nbsp;</div>
+                        <div id="favorito"></div>
 
                     </div>
 
@@ -204,33 +182,26 @@
         </div>
     </div>
 
-
-    <!--
     <footer>
-        <div id="footerContent">
-            <a href="">
-                <h3>Sobre nós</h3>
-            </a>
-            <div id="midia">
-                <h3>Nossas Redes Sociais</h3>
-                <button id="facebookLink"></button>
-                <button id="instagramlink"> </button>
-            </div>
+      <div id="footerContent">
+        <a href=""><h3>Sobre nós</h3></a>
+        <div id="midia">
+          <h3>Nossas Redes Sociais</h3>
+          <button id="facebookLink"></button>
+          <button id="instagramlink"></button>
+        </div>
 
-            <figure>
-                <figcaption>
-                    <h3>Formas de pagamento</h3>
-                </figcaption>
-                <img src="./img/pay.png" alt="">
-            </figure>
-        </div>
-        <div class="copyrow">
-            <hr>
-            <p style="padding-top: 10px;">1ike. Todos os direitos reservados &copy;2023</p>
-        </div>
+        <figure>
+          <figcaption><h3>Formas de pagamento</h3></figcaption>
+          <img src="./img/pay.png" alt="" />
+        </figure>
+      </div>
+      <div class="copyrow">
+        <hr />
+        <p style="padding-top: 10px">
+          1ike. Todos os direitos reservados &copy;2023
+        </p>
+      </div>
     </footer>
--->
-
-</body>
-
+  </body>
 </html>
