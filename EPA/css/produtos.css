@@ -4,6 +4,7 @@ body{
 }
 
 #product-Container {
+    background-color:white;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -11,6 +12,7 @@ body{
     display: table;
     height: 100%;
     max-height: 700px;
+    padding: 3%;
 }
 
 /* Descrição do produto */
@@ -71,18 +73,64 @@ body{
     height: 100%;
     padding-left: 2.5%;
     padding-right: 2.5%;
+    padding-bottom: 8%;
 }
 
 #mainImage{
-    background-color: rgb(53, 182, 139);
+    background-image: url(../img/blackShoes.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: rgb(0, 0, 0);
     width: 100%;
     padding-bottom: 75%;
 }
 
 #previewImages-Container {
-    background-color: rgb(182, 16, 11);
+    background-color: rgb(105, 105, 104);
+    
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 1%;
+    
     height: 20%;
     max-height: 65px;
+}
+
+.previewImage{
+    background-color: black;
+    aspect-ratio: 1/1;
+    height: 80%;
+}
+
+#preview-1{
+    background-image: url(../img/preview1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+#preview-2{
+    background-image: url(../img/preview2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+#preview-3{
+    background-image: url(../img/preview3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+#preview-4{
+    background-image: url(../img/preview4.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:contain;
 }
 
 /* Div direita*/
@@ -199,6 +247,12 @@ body{
     background-color: blue;
 }
 
+#separa{
+    margin-top: 6%;
+    margin-bottom: 2%;
+    
+}
+
 #entrega{
     width: 100%;
     height: auto;
@@ -211,7 +265,10 @@ body{
 
 #Cep{
     width: 100%;
-    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
 #input-Cep{
@@ -224,13 +281,16 @@ body{
 }
 
 #consultar{
+    width: 50%;
+    font-size: 100%;
+    border-radius: 5px;
+    padding: 5%;
+    border: 0;
+    font-family: "Trebuchet MS",Arial,sans-serif;
+    font-weight: 500;
     background-color: #0091ea;
-    border-radius: 4px;
-    width: 10%;
-    height: 100%;
-    margin-left: 1%;
+    color: #fff;
     cursor: pointer;
-    border: none;
 }
 
 /* nada especifico */
