@@ -129,7 +129,8 @@ body{
     align-items: center;
     gap: 1%;
     
-    height: 20%;
+    aspect-ratio: 10/2;
+    width: 100%;
     max-height: 65px;
 }
 
@@ -375,6 +376,9 @@ body{
     cursor: pointer;
 }
 
+footer{
+    margin-top: 13%;
+}
 /* nada especifico */
 
 .fontBold {
