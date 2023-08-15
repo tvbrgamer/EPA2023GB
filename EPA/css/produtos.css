@@ -1,19 +1,19 @@
-body{
+body {
     min-width: 100vw;
     min-height: 100vh;
 }
 
 #product-Container {
-    background-color:white;
+    background-color: white;
     margin-top: 2%;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    max-width: 900px;
+    max-width: 1200px;
     display: table;
     height: 100%;
     max-height: 700px;
-    padding: 3%;
+    padding: 30px;
     border-radius: 10px;
 }
 
@@ -40,7 +40,7 @@ body{
     font-weight: 700;
 }
 
-#caracteristicasDiv{
+#caracteristicasDiv {
     padding: 10%;
 }
 
@@ -66,39 +66,39 @@ body{
     border-radius: 50px;
 }
 
-#facebookIcon{
+#facebookIcon {
     background-image: url(../img/facebook.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
 }
 
-#twitterIcon{
+#twitterIcon {
     background-image: url(../img/twitter.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
 }
 
-#pinterestIcon{
+#pinterestIcon {
     background-image: url(../img/pinterest.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
 }
 
-#mailIcon{
+#mailIcon {
     background-image: url(../img/mail.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
 }
 
-#whatsappIcon{
+#whatsappIcon {
     background-image: url(../img/whatsapp.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
 }
 
 /* Campo das imagens :) */
@@ -109,68 +109,67 @@ body{
     height: 100%;
     padding-left: 2.5%;
     padding-right: 2.5%;
-    padding-bottom: 8%;
 }
 
-#mainImage{
+#mainImage {
     background-image: url(../img/main.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
 
     background-color: rgb(0, 0, 0);
     width: 100%;
     aspect-ratio: 1/1;
 }
 
-#previewImages-Container {  
+#previewImages-Container {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     gap: 1%;
-    
+
     aspect-ratio: 10/2;
     width: 100%;
     max-height: 65px;
 }
 
-.previewImage{
+.previewImage {
     aspect-ratio: 1/1;
     height: 80%;
     border: 1px solid rgb(155, 146, 146);
 }
 
-.arrowImage{
+.arrowImage {
     aspect-ratio: 1/1;
     height: 80%;
 }
 
-#preview-1{
+#preview-1 {
     background-image: url(../img/preview1.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
 }
 
-#preview-2{
+#preview-2 {
     background-image: url(../img/preview2.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
 }
 
-#preview-3{
+#preview-3 {
     background-image: url(../img/preview3.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
 }
 
-#preview-4{
+#preview-4 {
     background-image: url(../img/preview4.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
 }
 
 /* Div direita*/
@@ -180,27 +179,27 @@ body{
     width: 30%;
 }
 
-#oldPrice{
+#oldPrice {
     font-size: 70%;
-    text-decoration:line-through;
+    text-decoration: line-through;
     color: rgb(109, 109, 109);
 }
 
-#newPrice-Div{
+#newPrice-Div {
     width: 100%;
 }
 
-#newPrice-pix{
+#newPrice-pix {
     display: flex;
 }
 
-#newPrice-pix h1{
+#newPrice-pix h1 {
     font-size: 150%;
     -webkit-text-stroke-color: gray;
     -webkit-text-stroke-width: 0.5px;
 }
 
-#pixTxt{
+#pixTxt {
     font-size: 70%;
     -webkit-text-stroke-color: gray;
     -webkit-text-stroke-width: 0.5px;
@@ -208,84 +207,84 @@ body{
     margin-top: 5%;
 }
 
-#parcelaTxt{
+#parcelaTxt {
     font-size: 100%;
     font-weight: 500;
 }
 
-#selecionarCores{
+#selecionarCores {
     height: 10%;
 }
 
-#corTxt{
+#corTxt {
     font-weight: 400;
 }
 
-#coresSelect{
+#coresSelect {
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 4%;
 }
 
-.imageCores{
+.imageCores {
     aspect-ratio: 1/1;
     margin-top: 5px;
     width: 15%;
     border: 1px solid rgb(155, 146, 146);
 }
 
-#pretoCor{
+#pretoCor {
     background-image: url(../img/preto.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
 }
 
-#azulCor{
+#azulCor {
     background-image: url(../img/azul.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
 }
 
-#vermelhoCor{
+#vermelhoCor {
     background-image: url(../img/vermelho.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
 }
 
-#chumboCor{
+#chumboCor {
     background-image: url(../img/chumbo.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
 }
 
-#pretoechumboCor{
+#pretoechumboCor {
     background-image: url(../img/pretoechumbo.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
 }
 
-#selecionarTamanhos{
+#selecionarTamanhos {
     height: 10%;
 }
 
-#tamanhoTxt{
+#tamanhoTxt {
     font-weight: 400;
 }
 
-#tamanhosSelect{
+#tamanhosSelect {
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
 }
 
-.tamanhoIcon{
+.tamanhoIcon {
     background-color: rgb(255, 249, 249);
     display: flex;
     justify-content: center;
@@ -298,27 +297,27 @@ body{
     border: 1px solid rgb(110, 99, 99);
 }
 
-#buyFav{
+#buyFav {
     display: flex;
     width: 100%;
     gap: 5%;
     margin-top: 5%;
 }
 
-#comprarButton{
+#comprarButton {
     width: 60%;
     font-size: 100%;
     border-radius: 5px;
     padding: 4%;
     border: 0;
-    font-family: "Trebuchet MS",Arial,sans-serif;
+    font-family: "Trebuchet MS", Arial, sans-serif;
     font-weight: 500;
     background: #ff691e;
     color: #fff;
     cursor: pointer;
 }
 
-#favoritoButton{
+#favoritoButton {
     width: 20%;
     aspect-ratio: 1/1;
     border-radius: 100%;
@@ -330,23 +329,23 @@ body{
     background-size: 60%;
 }
 
-#separa{
+#separa {
     margin-top: 6%;
     margin-bottom: 2%;
-    
+
 }
 
-#entrega{
+#entrega {
     width: 100%;
     height: auto;
 }
 
-#consulteTxt{
+#consulteTxt {
     font-size: 120%;
     font-weight: 500;
 }
 
-#Cep{
+#Cep {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -354,31 +353,32 @@ body{
     gap: 8px;
 }
 
-#input-Cep{
+#input-Cep {
     background-color: #fff;
     border: 1px solid #eee;
     border-radius: 3px;
     width: 75%;
     height: 5%;
-    padding: 3% ;
+    padding: 3%;
 }
 
-#consultar{
+#consultar {
     width: 50%;
     font-size: 100%;
     border-radius: 5px;
     padding: 5%;
     border: 0;
-    font-family: "Trebuchet MS",Arial,sans-serif;
+    font-family: "Trebuchet MS", Arial, sans-serif;
     font-weight: 500;
     background-color: #0091ea;
     color: #fff;
     cursor: pointer;
 }
 
-footer{
+footer {
     margin-top: 13%;
 }
+
 /* nada especifico */
 
 .fontBold {
