@@ -5,6 +5,7 @@ body{
 
 #product-Container {
     background-color:white;
+    margin-top: 2%;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -13,6 +14,7 @@ body{
     height: 100%;
     max-height: 700px;
     padding: 3%;
+    border-radius: 10px;
 }
 
 /* Descrição do produto */
@@ -59,13 +61,47 @@ body{
 }
 
 .icon {
-    background-color: aqua;
     width: 25px;
     height: 25px;
     border-radius: 50px;
 }
 
-/* Compo das imagens :) */
+#facebookIcon{
+    background-image: url(../img/facebook.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#twitterIcon{
+    background-image: url(../img/twitter.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#pinterestIcon{
+    background-image: url(../img/pinterest.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#mailIcon{
+    background-image: url(../img/mail.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#whatsappIcon{
+    background-image: url(../img/whatsapp.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+/* Campo das imagens :) */
 
 #imagesDiv {
     display: table-cell;
@@ -77,19 +113,17 @@ body{
 }
 
 #mainImage{
-    background-image: url(../img/blackShoes.png);
+    background-image: url(../img/main.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
 
     background-color: rgb(0, 0, 0);
     width: 100%;
-    padding-bottom: 75%;
+    aspect-ratio: 1/1;
 }
 
-#previewImages-Container {
-    background-color: rgb(105, 105, 104);
-    
+#previewImages-Container {  
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -100,7 +134,12 @@ body{
 }
 
 .previewImage{
-    background-color: black;
+    aspect-ratio: 1/1;
+    height: 80%;
+    border: 1px solid rgb(155, 146, 146);
+}
+
+.arrowImage{
     aspect-ratio: 1/1;
     height: 80%;
 }
@@ -175,7 +214,6 @@ body{
 
 #selecionarCores{
     height: 10%;
-    background-color: aqua;
 }
 
 #corTxt{
@@ -193,12 +231,46 @@ body{
     aspect-ratio: 1/1;
     margin-top: 5px;
     width: 15%;
-    background-color: blue;
+    border: 1px solid rgb(155, 146, 146);
+}
+
+#pretoCor{
+    background-image: url(../img/preto.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+#azulCor{
+    background-image: url(../img/azul.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+#vermelhoCor{
+    background-image: url(../img/vermelho.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+#chumboCor{
+    background-image: url(../img/chumbo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+#pretoechumboCor{
+    background-image: url(../img/pretoechumbo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:contain;
 }
 
 #selecionarTamanhos{
     height: 10%;
-    background-color: bisque;
 }
 
 #tamanhoTxt{
@@ -213,11 +285,16 @@ body{
 }
 
 .tamanhoIcon{
+    background-color: rgb(255, 249, 249);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80%;
     aspect-ratio: 1/1;
     margin-top: 5px;
     width: 22px;
-    background-color: blue;
     border-radius: 50px;
+    border: 1px solid rgb(110, 99, 99);
 }
 
 #buyFav{
@@ -244,7 +321,12 @@ body{
     width: 20%;
     aspect-ratio: 1/1;
     border-radius: 100%;
-    background-color: blue;
+    border: 1px solid rgb(155, 146, 146);
+
+    background-image: url(../img/heart.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 60%;
 }
 
 #separa{
