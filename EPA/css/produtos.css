@@ -318,16 +318,25 @@ body {
 }
 
 #favoritoButton {
+    cursor: pointer;
     width: 20%;
     aspect-ratio: 1/1;
     border-radius: 100%;
     border: 1px solid rgb(155, 146, 146);
-
+    background-color: #fff;
     background-image: url(../img/heart.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 60%;
 }
+
+#favoritoButton:hover, #favoritoButton:focus {
+    background-color: #0091ea;
+    color: #fff;
+    background-image: url(../img/heartWhite.png);
+
+}
+
 
 #separa {
     margin-top: 6%;
