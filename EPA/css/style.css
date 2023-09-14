@@ -230,21 +230,6 @@ footer {
 
 }
 
-#facebookLink {
-    margin-right: 20px;
-    cursor: pointer;
-    border: none;
-    background-color: rgba(245, 222, 179, 0);
-    width: 32px;
-    height: 32px;
-    background-image: url(../img/facebookLogo.png);
-}
-
-#facebookLink:hover {
-    background-image: url(../img/facebookLogoWhite.png);
-    transition: .2s;
-}
-
 #instagramlink {
     margin-right: 20px;
     cursor: pointer;
