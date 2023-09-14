@@ -288,6 +288,7 @@ footer {
 }
 
 .promoProducts {
+    background-color: rgb(245, 245, 245);
     text-align: center;
     padding-left: 10px;
     margin: 0 auto;
