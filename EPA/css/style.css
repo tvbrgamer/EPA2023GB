@@ -22,45 +22,54 @@ body{
     background-color: #C7C7C7;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
 
 /*Inicio do cabeçalho */
 
 
 header { /*Tag pricipal do cabeçalho*/
     z-index: 3;
-    padding-left: 30px;
+    padding-left: 2%;
     display: flex;
     background-color: #FFFFFF;
     position: sticky;
     top: 0;
-    width: 100%;
-    height: 90px;
-    box-shadow: 1px 1px 1px 1px #b1b1b1;
+    height: 7vw;
+    box-shadow: 0.05vw 0.05vw 0.05vw 0.05vw #b1b1b1;
 }
 
 .logo /*configuração da logo */{
-    height: 110px;
-    width: 110px;
+   height: 100%;
+   width: auto;
 }
 
 .SearchBox input /*Configuração do campo de texto e do botão da barra de pesquisas*/{
-    margin-top: 25px;
+    margin-top: 2vw;
     position: relative;
     display: inline-block;
-    font-size: 18px;
+    font-size: 1vw;
     box-sizing: border-box;
 }
 
+form {
+    height: auto;
+    width: auto;
+}
+
+
+
 .SearchBoxText /*Configuração do campo de texto da barra de pesquisas*/{
     position: relative;
-    border-radius: 0px 25px 25px 0px;
-    padding: 0 25px;
+    border-radius: 0 1.5rem 1.5rem 0;
+    padding: 0 2vw;
     outline: 0;
-    border: #C7C7C7 1px solid;
+    border: #C7C7C7 0.1vw solid;
     border-left: 0;
     background: #FFFFFF;
-    height: 48px;
-    max-width: 400px;
+    height: 3vw;
 }
 
 .SearchBox /*Configuração da div da barra de pesquisas*/{
@@ -73,15 +82,16 @@ header { /*Tag pricipal do cabeçalho*/
     background-image: url(../img/searchIco.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    left: 5px;
+    background-size: 2vw;
+    left: 1%;
     cursor: pointer;
-    border-radius: 25px 0px 0px 25px;
+    border-radius: 1.5rem 0 0 1.5rem;
     position: relative;
-    border: #C7C7C7 1px solid;
+    border: #C7C7C7 0.1vw solid;
     border-right: 0;
     outline: 0;
-    height: 48px;
-    width: 48px;
+    height: 3vw;
+    width: 3.5vw;
 }
 
 .SearchBoxButton:hover /*Hover do botão da barra de pesquisas */{
@@ -93,20 +103,20 @@ header { /*Tag pricipal do cabeçalho*/
 }
 
 #cartBox /*Configuração do botão do carrinho*/{ 
-    padding-top: 40px;
+    padding-top: 3%;
     border: 0;
     background-color: #ffffff00;
     cursor: pointer;
-    padding-left: 0px;
-    border-radius: 10px;
+    border-radius: 1rem;
     background-image: url(../img/cartIco.png);
+    background-size: 35%;
     background-repeat: no-repeat;
     background-position: 40% 20%;
-    margin-left: 75px;
-    margin-top: 20px;
-    height: 60px;
-    width: 100px;
-    font-size: 13px;
+    margin-left: 3%;
+    margin-top: 1.5%;
+    height: 9vh;
+    width: 12vh;
+    font-size: 0.8vw;
     color: #162F33;
 }
 
@@ -119,18 +129,20 @@ header { /*Tag pricipal do cabeçalho*/
     transition: .2s;
 }
 #userBox /*Configuração do botão do usuário/login*/{
-    border-radius: 10px;
+    border-radius: 1rem;
     background-color: #ffffff00;
     background-image: url(../img/userIco.png);
     background-repeat: no-repeat;
+    background-size: 35%;
     background-position: 50% 20%;
-    padding-top: 40px;
+    padding-top: 3%;
     cursor: pointer;
-    margin-left: 30px;
-    margin-top: 20px;
-    height: 60px;
+    margin-left: 3%;
+    margin-top: 1.5%;
+    height: 9vh;
     border: 0;
-    width: 120px;
+    width: 13vh;
+    font-size: 0.8vw;
 }
 
 #userBox:hover /*Hover do botão do usuário/login*/{
@@ -150,16 +162,16 @@ header { /*Tag pricipal do cabeçalho*/
 
 
 nav /*Tag principal da barra de  navegação*/{
-    font-size: large;
-    padding: 5px;
+    font-size: 1.2vw;
+    align-items: center;
     display: flex;
-    height: 40px;
+    height: 3vw;
     background-color: #162F33;
     width: 100%;
     justify-content: space-around;
 }
 nav ul /*Configuração da lista da barra de navegação*/{
-    gap: 25px;
+    gap: 1.5vw;
     display: flex;
     padding: 0;   
     list-style: none;
@@ -181,8 +193,8 @@ nav ul /*Configuração da lista da barra de navegação*/{
 /*Seção dos produtos*/
 
 section{
-    height: 2600px;
-    padding-top: 30px;
+    height: 320vh;
+    padding-top: 2%;
     margin:0 auto;
     width: 70%;
     background-color: #FAF7FB;
@@ -191,29 +203,28 @@ section{
 footer {
     background-color: #162F33;
     width: 100%;
-    height: 200px;
 }
 
 .copyrow {
-    
+    font-size: 1vw;
     margin: 0 auto;
     position: relative;
-    padding-top: 5px;
+    padding-top: 0.2%;
     text-align: center;
     color: #FFFFFF;
     background-color: #162F33;
-    height: 50px;
     width: 60%;
 }
 
+
 .promo {
     margin: 0 auto;
-    border-radius: 20px;
-    padding: 15px;
+    border-radius: 1rem;
+    padding: 1.5%;
     background-color: #FFFFFF;
     text-align: left;
     width: 90%;
-    height: 350px;
+    margin-bottom: 2vw;
 }
 
 #footerContent a {
@@ -221,23 +232,26 @@ footer {
 }
 
 #footerContent {
+    font-size: 1vw;
     color: #FFFFFF;
-    padding-top: 10px;
+    padding-top: 1%;
     padding-left: 30%;
-    gap: 200px;
+    gap: 7vw;
     display: flex;
     flex-direction: row;
 
 }
 
 #instagramlink {
-    margin-right: 20px;
+    margin-right: 5%;
     cursor: pointer;
     border: none;
     background-color: rgba(245, 222, 179, 0);
-    width: 32px;
-    height: 32px;
+    width: 4vh;
+    height: 4vh;
     background-image: url(../img/instagramLogo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 #instagramlink:hover {
@@ -249,58 +263,57 @@ footer {
     display: flex;
     flex-direction: row;
     text-align: center;
-    padding-top: 20px;
     margin: 0 auto;
     width: 90%;
-    height: 150px;
-    padding-bottom: 170px;
+    height: 6%;
 }
 
 .sectionItens:hover {
-    border: #162F33 solid 2px;
+    border: #162F33 solid 0.15rem;
     transition: 100ms;
 }
 .sectionItens {
     margin: 0 auto;
-    height: 110px;
-    width: 110px;
-    border: #162F33 solid 1px;
-    border-radius: 40px;
-    padding-top: 110px;
+    height: 7vw;
+    width: 7vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: #162F33 solid 0.1rem;
+    border-radius: 4rem;
 }
 
 .promoLink {
-    height: 32px;
     color: #0F0F0F;
     text-decoration: 0;
 }
 .promoLink h1, .promoLink p {
+    font-size: 1.5vw;
     display: inline;
     font-family: 'Open Sans', sans-serif;
-    line-height: 28px;
+    line-height: 3vw;
 }
 
 #promoProductsBox {
     display: flex;
     flex-direction: row;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 2%;
 }
 
 .promoProducts {
     background-color: rgb(245, 245, 245);
     text-align: center;
-    padding-left: 10px;
+    padding-left: 2%;
     margin: 0 auto;
-    border-radius: 10px;
-    padding-bottom: 10px;
-    box-shadow: 1px 1px 1px 1px #c2cbce;
-    width: 200px;
-    height: 230px;
+    border-radius: 1rem;
+    padding-bottom: 2%;
+    box-shadow: 0.25rem 0.25rem 0.25rem 0.25rem #c2cbce;
+    width: 21%;
+    height: 100%;
 }
 
 .promoProducts:hover{
-    box-shadow: 3px 3px 3px 3px #c2cbce;
+    box-shadow: 0.35rem 0.35rem 0.35rem 0.35rem #c2cbce;
     transition: 2.s;
 }
 
@@ -310,28 +323,42 @@ footer {
     color: black;
 }
 
+.promoProductsLink h5 {
+    font-size: 0.8vw;
+}
+.promoProductsLink h4 {
+    font-size: 1vw;
+}
+
 .promoProductsImg {
-    padding-top: 15px;
+    margin: 0 auto;
+    width: 45%;
+    padding-top: 5%;
 }
 
 .promoLink p{
-    margin-left: 40px;
     color:  #b1b1b1;
 }
 
 .cartAddBtn{
     color: #FAF7FB;
     cursor: pointer;
-    border: 1px #b9b6b6 solid;
+    border: 0.1rem #b9b6b6 solid;
     background-color: #162F33;
-    border-radius: 8px;
-    margin-top: 10px;
+    border-radius: 0.5rem;
+    margin-top: 5%;
     width: 70%;
-    height: 30px;
+    height: 2.5vw;
 }
 
+.cartAddBtn p{
+    font-size: 0.8vw;
+}
+
+
+
 .cartAddBtn:hover {
-    border: 1px #b9b6b6 solid;
+    border: 0.2rem #b9b6b6 solid;
     color:#5e595c ;
     background-color: #FAF7FB; 
     transition: .2s;
@@ -339,22 +366,22 @@ footer {
 
 #newProduct {
     text-align: center;
-    margin-top: 70px;
+    margin-top: 3%;
 }
 
 
 #newProduct h1 {
-    padding-left: 50px;
-    font-size: 30px;
+    font-size: 2vw;
 }
 
 #shoeBanner {
-    border-radius: 10px;
-    margin-top: 10px;
+    border-radius: 1rem;
+    margin-top: 1%;
     width: 100%;
 }
 
 #newProductText{
+    font-size: 1vw;
     color: #162F33;
     text-decoration: none;
     text-align: center;
@@ -364,12 +391,12 @@ footer {
 #newProductButton {
     color: #FAF7FB;
     cursor: pointer;
-    border: 1px #b9b6b6 solid;
+    border: 0.10rem #b9b6b6 solid;
     background-color: #162F33;
-    border-radius: 8px;
-    margin-top: 10px;
+    border-radius: 0.75rem;
+    margin-top: 1%;
     width: 30%;
-    height: 30px;
+    height: 2vw;
 }
 
 #newProductButton:hover {
@@ -379,7 +406,7 @@ footer {
 }
 
 .cartAddBtn:hover {
-    border: 1px #b9b6b6 solid;
+    border: 0.1rem #b9b6b6 solid;
     color:#5e595c ;
     background-color: #FAF7FB; 
     transition: .2s;
@@ -401,7 +428,7 @@ footer {
 }
 
 .oldValue {
-    padding-left: 5px;
+    padding-left: 3%;
     text-decoration-line: line-through;
     font-size: smaller;
     color: #404040;
@@ -414,11 +441,6 @@ a {
 #carouselArea {
     width: 100%;
     
-}
-
-#carouselArea > h1 {
-    font-size: 25px;
-    font-weight: bold;
 }
 
 .carousel {
@@ -462,9 +484,9 @@ a {
     transform: translateY(-50%);
     color: #162F33;
     cursor: pointer;
-    font-size: 25px;
-    height: 32px;
-    width: 32px;
+    font-size: 2vw;
+    height: 20%;
+    width: 3%;
     position: absolute;
     z-index: 2;
     background: none;
@@ -479,7 +501,7 @@ a {
 }
   
 .carousel-button:focus {
-    outline: 1px solid black;
+    outline: 0.05rem solid black;
 }
   
 .carousel-button.prev {
@@ -491,16 +513,15 @@ a {
 }
 
 #promoArea {
-    
     background-color: #FFFFFF ;
-    border-radius: 30px;
+    border-radius: 2rem;
     margin: 0 auto;
     width: 99%;
-    height: 250px;
-    margin-top: 50px;
-    margin-bottom: 40px;
+    height: 17vw;
+    margin-top: 2%;
+    margin-bottom: 3%;
     display: flex;
     flex-direction: row;
-    padding-bottom: 0px;
-    padding-top: 10px;
+    padding-top: 1%;
+    padding-bottom: 2%;
 }
