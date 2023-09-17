@@ -38,16 +38,16 @@ header { /*Tag pricipal do cabeçalho*/
     position: sticky;
     top: 0;
     height: 7vw;
+    align-items: center;
     box-shadow: 0.05vw 0.05vw 0.05vw 0.05vw #b1b1b1;
 }
 
 .logo /*configuração da logo */{
-   height: 100%;
+   height: 70%;
    width: auto;
 }
 
 .SearchBox input /*Configuração do campo de texto e do botão da barra de pesquisas*/{
-    margin-top: 2vw;
     position: relative;
     display: inline-block;
     font-size: 1vw;
@@ -193,16 +193,16 @@ nav ul /*Configuração da lista da barra de navegação*/{
 /*Seção dos produtos*/
 
 section{
-    height: 320vh;
     padding-top: 2%;
     margin:0 auto;
-    width: 70%;
+    width: 80%;
     background-color: #FAF7FB;
+    padding-bottom: 5%;
 }
 
-footer {
+footer { 
+    height: 10%;
     background-color: #162F33;
-    width: 100%;
 }
 
 .copyrow {
@@ -266,6 +266,7 @@ footer {
     margin: 0 auto;
     width: 90%;
     height: 6%;
+    margin-bottom: 3%
 }
 
 .sectionItens:hover {
@@ -524,4 +525,147 @@ a {
     flex-direction: row;
     padding-top: 1%;
     padding-bottom: 2%;
+}
+
+form {
+    height: 100%;
+    width: 100%;
+}
+
+
+@media (max-height: 700px), (orientation: portrait)  {
+    section {
+        width: 100%;
+    }
+    header {
+        height: 7vh;
+    }
+    nav {
+        height: 4vh;
+        font-size: 1.3vh;
+    }
+    .logo {
+        gap: 0;
+        padding-top: 3vw;
+        height: 10vh;
+    }
+
+    #cartBox {
+        margin-top: 5vw;
+        font-size: 1vh;
+        background-size: 3vh;
+    }
+    #userBox {
+        margin-top: 5vw;
+        font-size: 1vh;
+        background-size: 3vh;
+    }
+    header a {
+         width: 15%;
+    }
+
+    input,input::placeholder {
+    font: 3vw/3 sans-serif;
+    }
+
+    .SearchBox {
+        width: 85%;
+        height: 50%;
+    }
+    .SearchBoxButton {
+        height: 100%;
+        left: 4%;
+        background-size: 3vw;
+        
+    }
+    .SearchBoxText{
+        height: 100%;
+        width: 75%;
+    }
+    .promo {
+        width: 100%;
+        height: 60vw;
+    }
+    .promoLink h1{
+        font-size: 6vw;
+    }
+    .promoLink p {
+        font-size: 3vw;
+    }
+    .promoProducts{
+        padding: 0;
+        width: 24%;
+        height: 45vw;
+    }
+    .promoProductsImg {
+        height: 10vh;
+        width: 8vh;
+    }
+    .cartAddBtn{
+        height: 5vh;
+        width: 95%;
+    }
+    .cartAddBtn p {
+        font-size: 3vw;
+    }
+    #sectionItensBox {
+        width: 100%;
+        height: 10vh;
+    }
+    .sectionItens{
+        background-position: 50%;
+        width: 8.7vh;
+        height: 10vh;
+        background-size: 9.8vh;
+    }
+    #promoArea {
+        height: 25vh;
+    }
+
+    .carousel-button.prev {
+        position: relative;
+        left: -0.5%;
+        font-size: 3vh;
+    }
+
+    .carousel-button.next {
+        position: relative;
+        right: -92%;
+        font-size: 3vh;
+    }
+    #promoad01{
+        width: 100%;
+        height: 30vh;
+    }
+    #promoad01-img {
+        position: relative;
+        left: -30%;
+        height: 20vh;
+        width: 130%;
+    }
+
+    #newProduct h1{
+        font-size: 5vw
+    }
+    
+    #newProduct h2 {
+        font-size: 3vw;
+    }
+    #newProductButton {
+        height: 5vh;
+        width: 80%;
+    }
+    footer {
+        padding-top: 3%;
+        height: 15vh;
+    }
+    #footerContent{ 
+        text-align: center;
+        padding: 0;
+        font-size: 1.5vh;
+    }
+    .copyrow {
+        padding-top: 1vh;
+        font-size: 1.5vh;
+    }
 }
