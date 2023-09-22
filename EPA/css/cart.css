@@ -1,0 +1,874 @@
+/*
+    Documento CSS da página principal
+
+    Paleta de cores:
+    #0F0F0F - Preto
+    #162F33 - Azul Marinho
+    #FFFFFF - Branco
+    #C7C7C7 - Cinza Claro
+    #404040 - Cinza Escuro
+
+*/
+
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+body{ 
+    background-color: #C7C7C7;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/*Inicio do cabeçalho */
+
+
+header { /*Tag pricipal do cabeçalho*/
+    z-index: 3;
+    padding-left: 2%;
+    display: flex;
+    background-color: #FFFFFF;
+    position: sticky;
+    top: 0;
+    height: 7vw;
+    align-items: center;
+    box-shadow: 0.05vw 0.05vw 0.05vw 0.05vw #b1b1b1;
+}
+
+.logo /*configuração da logo */{
+   height: 70%;
+   width: auto;
+}
+
+.SearchBox input /*Configuração do campo de texto e do botão da barra de pesquisas*/{
+    position: relative;
+    display: inline-block;
+    font-size: 1vw;
+    box-sizing: border-box;
+}
+
+form {
+    height: auto;
+    width: auto;
+}
+
+
+
+.SearchBoxText /*Configuração do campo de texto da barra de pesquisas*/{
+    position: relative;
+    border-radius: 0 1.5rem 1.5rem 0;
+    padding: 0 2vw;
+    outline: 0;
+    border: #C7C7C7 0.1vw solid;
+    border-left: 0;
+    background: #FFFFFF;
+    height: 3vw;
+}
+
+.SearchBox /*Configuração da div da barra de pesquisas*/{
+    text-align: right;
+    width: 55%;
+}
+
+.SearchBoxButton /*Configuração do botão da barra de pesquisas */{
+    background: #FFFFFF;
+    background-image: url(../img/searchIco.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 2vw;
+    left: 1%;
+    cursor: pointer;
+    border-radius: 1.5rem 0 0 1.5rem;
+    position: relative;
+    border: #C7C7C7 0.1vw solid;
+    border-right: 0;
+    outline: 0;
+    height: 3vw;
+    width: 3.5vw;
+}
+
+.SearchBoxButton:hover /*Hover do botão da barra de pesquisas */{
+    background-color: #162F33;
+    background-image: url(../img/searchIcoWhite.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transition: .2s;
+}
+
+#cartBox /*Configuração do botão do carrinho*/{ 
+    padding-top: 3%;
+    border: 0;
+    background-color: #ffffff00;
+    cursor: pointer;
+    border-radius: 1rem;
+    background-image: url(../img/cartIco.png);
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position: 40% 20%;
+    margin-left: 3%;
+    margin-top: 1.5%;
+    height: 9vh;
+    width: 12vh;
+    font-size: 0.8vw;
+    color: #162F33;
+}
+
+#cartBox:hover /*Hover do botão do carrinho*/ {
+    color: #FFFFFF;
+    background-image: url(../img/cartIcoWhite.png);
+    background-repeat: no-repeat;
+    background-position: 40% 20%;
+    background-color: #162F33;
+    transition: .2s;
+}
+#userBox /*Configuração do botão do usuário/login*/{
+    border-radius: 1rem;
+    background-color: #ffffff00;
+    background-image: url(../img/userIco.png);
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: 50% 20%;
+    padding-top: 3%;
+    cursor: pointer;
+    margin-left: 3%;
+    margin-top: 1.5%;
+    height: 9vh;
+    border: 0;
+    width: 13vh;
+    font-size: 0.8vw;
+}
+
+#userBox:hover /*Hover do botão do usuário/login*/{
+    color: #FFFFFF;
+    background-image: url(../img/userIcoWhite.png);
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-color: #162F33;
+    transition: .2s;
+}
+
+
+/*Final do cabeçalho */
+
+
+/*Inicio da barra de navegação */
+
+
+nav /*Tag principal da barra de  navegação*/{
+    font-size: 1.2vw;
+    align-items: center;
+    display: flex;
+    height: 3vw;
+    background-color: #162F33;
+    width: 100%;
+    justify-content: space-around;
+}
+nav ul /*Configuração da lista da barra de navegação*/{
+    gap: 1.5vw;
+    display: flex;
+    padding: 0;   
+    list-style: none;
+    color: #FAF7FB;
+}
+
+.navLink /*Configuração do link da barra de navegação*/{
+    color: #FAF7FB;
+    text-decoration: none;
+}
+
+.navLink:hover /*Hover do link da barra de navegação*/{
+    color: #C7C7C7;
+    transition: .2s;
+}
+
+/*Final da barra de navegação */
+
+/*Seção dos produtos*/
+
+section{
+    height: 70vh;
+    padding-top: 2%;
+    margin:0 auto;
+    width: 80%;
+    background-color: #FAF7FB;
+    padding-bottom: 5%;
+}
+
+footer { 
+    height: 10%;
+    background-color: #162F33;
+}
+
+.copyrow {
+    font-size: 1vw;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 0.2%;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #162F33;
+    width: 60%;
+}
+
+
+.promo {
+    margin: 0 auto;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background-color: #FFFFFF;
+    text-align: left;
+    width: 90%;
+    margin-bottom: 2vw;
+}
+
+#footerContent a {
+    color: #FFFFFF;
+}
+
+#footerContent {
+    font-size: 1vw;
+    color: #FFFFFF;
+    padding-top: 1%;
+    padding-left: 30%;
+    gap: 7vw;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#twitterLink {
+    margin-right: 5%;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(245, 222, 179, 0);
+    width: 4vh;
+    height: 4vh;
+    background-image: url(../img/twitterLogo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#twitterLink:hover {
+    background-image: url(../img/twitterLogoWhite.png);
+    transition: .2s;
+}
+
+
+#facebookLink{
+    margin-right: 5%;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(245, 222, 179, 0);
+    width: 4vh;
+    height: 4vh;
+    background-image: url(../img/facebookLogo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#facebookLink:hover{
+    background-image: url(../img/facebookLogoWhite.png);
+    transition: .2s;
+}
+
+#instagramlink {
+    margin-right: 5%;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(245, 222, 179, 0);
+    width: 4vh;
+    height: 4vh;
+    background-image: url(../img/instagramLogo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#instagramlink:hover {
+    background-image: url(../img/instagramLogoWhite.png);
+    transition: .2s;
+}
+
+#sectionItensBox {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    height: 6%;
+    margin-bottom: 3%
+}
+
+.sectionItens:hover {
+    border: #162F33 solid 0.15rem;
+    transition: 100ms;
+}
+.sectionItens {
+    margin: 0 auto;
+    height: 7vw;
+    width: 7vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: #162F33 solid 0.1rem;
+    border-radius: 4rem;
+}
+
+.promoLink {
+    color: #0F0F0F;
+    text-decoration: 0;
+}
+.promoLink h1, .promoLink p {
+    font-size: 1.5vw;
+    display: inline;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 3vw;
+}
+
+#promoProductsBox {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-top: 2%;
+}
+
+.promoProducts {
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+    padding-left: 2%;
+    margin: 0 auto;
+    border-radius: 1rem;
+    padding-bottom: 2%;
+    box-shadow: 0.25rem 0.25rem 0.25rem 0.25rem #c2cbce;
+    width: 21%;
+    height: 100%;
+}
+
+.promoProducts:hover{
+    box-shadow: 0.35rem 0.35rem 0.35rem 0.35rem #c2cbce;
+    transition: 2.s;
+}
+
+.promoProductsLink {
+    text-align: justify;
+    text-decoration: none;
+    color: black;
+}
+
+.promoProductsLink h5 {
+    font-size: 0.8vw;
+}
+.promoProductsLink h4 {
+    font-size: 1vw;
+}
+
+.promoProductsImg {
+    margin: 0 auto;
+    width: 45%;
+    padding-top: 5%;
+}
+
+.promoLink p{
+    color:  #b1b1b1;
+}
+
+.cartAddBtn{
+    color: #FAF7FB;
+    cursor: pointer;
+    border: 0.1rem #b9b6b6 solid;
+    background-color: #162F33;
+    border-radius: 0.5rem;
+    margin-top: 5%;
+    width: 70%;
+    height: 2.5vw;
+}
+
+.cartAddBtn p{
+    font-size: 0.8vw;
+}
+
+
+
+.cartAddBtn:hover {
+    border: 0.2rem #b9b6b6 solid;
+    color:#5e595c ;
+    background-color: #FAF7FB; 
+    transition: .2s;
+}
+
+#newProduct {
+    text-align: center;
+    margin-top: 3%;
+}
+
+
+#newProduct h1 {
+    font-size: 2vw;
+}
+
+#shoeBanner {
+    border-radius: 1rem;
+    margin-top: 1%;
+    width: 100%;
+}
+
+#newProductText{
+    font-size: 1vw;
+    color: #162F33;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#newProductButton {
+    color: #FAF7FB;
+    cursor: pointer;
+    border: 0.10rem #b9b6b6 solid;
+    background-color: #162F33;
+    border-radius: 0.75rem;
+    margin-top: 1%;
+    width: 30%;
+    height: 2vw;
+}
+
+#newProductButton:hover {
+    color: #5e595c;
+    background-color: #FAF7FB;
+    transition: .2s;
+}
+
+.cartAddBtn:hover {
+    border: 0.1rem #b9b6b6 solid;
+    color:#5e595c ;
+    background-color: #FAF7FB; 
+    transition: .2s;
+}
+
+#promoad01-img {
+    width: 100%;
+}
+.black {
+    color: #0F0F0F;
+}
+
+.navyBlue {
+    color: #162F33;
+}
+
+.red {
+    color: rgb(255, 48, 48);
+}
+
+.oldValue {
+    padding-left: 3%;
+    text-decoration-line: line-through;
+    font-size: smaller;
+    color: #404040;
+}
+
+a {
+    text-decoration: none;
+}
+
+#carouselArea {
+    width: 100%;
+    
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+  
+.carousel > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+    display: flex;
+    flex-direction: row;
+}
+
+.slide > .promoProducts {
+    height: 105%;
+}
+
+.slide a {
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+
+
+.slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+}
+  
+.carousel-button {
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #162F33;
+    cursor: pointer;
+    font-size: 2vw;
+    height: 20%;
+    width: 3%;
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border-radius: .25rem;
+    background-color: rgba(255, 255, 255, 0.750);
+}
+  
+.carousel-button:hover,
+.carousel-button:focus {
+    background-color: rgba(255, 255, 255, 0.50);
+    
+}
+  
+.carousel-button:focus {
+    outline: 0.05rem solid black;
+}
+  
+.carousel-button.prev {
+    left: 1rem;
+}
+  
+.carousel-button.next {
+    right: 1rem;
+}
+
+#promoArea {
+    background-color: #FFFFFF ;
+    border-radius: 2rem;
+    margin: 0 auto;
+    width: 99%;
+    height: 17vw;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+form {
+    height: 100%;
+    width: 100%;
+}
+
+.cartProdArea{
+    width: 100%;
+    display: inline-flex;
+}
+
+.cartArea, .checkinArea{
+    margin: 0 2vh;
+    border-radius: 0.75rem;
+    box-shadow: #4040402a 0.1rem 0.1rem 0.1rem 0.1rem;
+    width: 50%;
+    background-color: #FAF7FB;
+    padding: 0 5vh;
+}
+
+.cartArea h1 {
+    color:#162F33;
+    padding-bottom: 2vh;
+}
+
+.cartProdImg {
+    border: #162F33 0.1rem solid;
+    width: 20vh;
+    margin-right: 1vh;
+}
+
+.cartProd, .cartQuant{
+    display: inline-flex;
+}
+
+.cartQuant{
+    padding-top: 5vh;
+}
+
+.line {
+    margin-top: 2vh;
+    position: relative;
+    left: 0%;
+    width: 95%;
+    color: #162f3373;
+}
+
+.cartQuant h1 {
+    padding-left: 20vh;
+
+}
+
+.cartQuant p, .cartQuant h1{
+    margin-top: 0.5vh;
+}
+
+.cartQuant input {
+    height: 30%;
+    width: 10%;
+}
+
+.cartProd p {
+    color:#5e595c ;
+}
+
+.cartQuant h1 {
+    color:#404040;
+}
+
+.oldPrice {
+    text-decoration:line-through;
+    font-size: smaller;
+    color: #10ba7993;
+}
+
+.checkinArea h3 {
+    padding: 3vh 0;
+    color: #5e595c;
+}
+
+.checkinArea h1 {
+    color: #162F33;
+}
+
+.checkinAreaButtons{
+    display: grid;
+    gap: 0.5vh;
+    padding-top: 5vh;
+    width: 100%;
+}
+
+.checkinAreaButtons button{
+    border: 0;
+    background-color: #162F33;
+    color: #FFFFFF;
+    font-size: large;
+    width: 100%;
+    height: 4vh;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.checkinAreaButtons button:hover{
+    background-color: #FFFFFF;
+    color: #404040;
+    transition: .2s;
+}
+
+.price {
+    color:#404040;
+
+}
+
+.discount {
+    color: #39acdf;;
+    position: relative;
+    text-decoration: underline;
+    left: 40%;
+}
+
+.discount a {
+    font-size: smaller;
+    color: #39acdf;
+}
+
+@media (max-height: 700px), (orientation: portrait)  {
+    section {
+        width: 100%;
+    }
+    header {
+        height: 10vh;
+    }
+    nav {
+        height: 4vh;
+        font-size: 1.3vh;
+    }
+    .logo {
+        gap: 0;
+        padding-top: 3vw;
+        height: 10vh;
+    }
+
+    #userBox {
+        height: 15vw;
+        margin-top: 4vw;
+        font-size: 1.2vh;
+        background-size: 3vh;
+    }
+    header a {
+         width: 15%;
+    }
+    input,input::placeholder {
+    font: 3vw/3 sans-serif;
+    }
+
+    .SearchBox {
+        width: 85%;
+        height: 50%;
+    }
+
+
+    .SearchBoxButton {
+        height: 100%;
+        left: 4%;
+        background-size: 3vw;
+        
+    }
+    .SearchBoxText{
+        height: 100%;
+        width: 75%;
+    }
+    .promo {
+        width: 100%;
+        height: 60vw;
+    }
+    .promoLink h1{
+        font-size: 6vw;
+    }
+    .promoLink p {
+        font-size: 3vw;
+    }
+    .promoProducts{
+        padding: 0;
+        width: 24%;
+        height: 45vw;
+    }
+    .promoProductsImg {
+        height: 10vh;
+        width: 8vh;
+    }
+    .cartAddBtn{
+        height: 5vh;
+        width: 95%;
+    }
+    .cartAddBtn p {
+        font-size: 3vw;
+    }
+    #sectionItensBox {
+        width: 100%;
+        height: 10vh;
+    }
+    .sectionItens{
+        background-position: 50%;
+        width: 8.7vh;
+        height: 10vh;
+        background-size: 9.8vh;
+    }
+    #promoArea {
+        height: 25vh;
+    }
+
+    .carousel-button.prev {
+        position: relative;
+        left: -0.5%;
+        font-size: 3vh;
+    }
+
+    .carousel-button.next {
+        position: relative;
+        right: -92%;
+        font-size: 3vh;
+    }
+    #promoad01{
+        width: 100%;
+        height: 30vh;
+    }
+    #promoad01-img {
+        position: relative;
+        left: -30%;
+        height: 20vh;
+        width: 130%;
+    }
+
+    #newProduct h1{
+        font-size: 5vw
+    }
+    
+    #newProduct h2 {
+        font-size: 3vw;
+    }
+    #newProductButton {
+        height: 5vh;
+        width: 80%;
+    }
+    footer {
+        padding-top: 3%;
+        height: 15vh;
+    }
+    #footerContent{ 
+        text-align: center;
+        padding: 0;
+        font-size: 1.5vh;
+    }
+    .copyrow {
+        padding-top: 1vh;
+        font-size: 1.5vh;
+        background-color: #162F33;
+        width: 100%;
+        height: 30%;
+    }
+    .promoProductsLink h5 {
+        font-size: 2.5vw;
+    }
+    .promoProductsLink h4 {
+        font-size: 2.3vw;
+    }
+    .cartProdArea{
+        display: grid;
+    }
+    .cartArea{
+        padding-right: 20vh;
+        width: 100%;
+        margin: 0;
+        font-size: small;
+    }
+
+    .checkinArea {
+        padding-top: 5%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .quant {
+        padding: 1vh;
+    }
+    .cartQuant h1 {
+        padding: 0;
+    }
+    section {
+        height: 120vh;
+    }
+    .checkinAreaButtons button {
+        width: 80%;
+        height: 5vh;
+    }
+    .discount{
+        left: 0%;
+    }
+}
+

@@ -4,6 +4,14 @@ function loginPage(){
   window.open("./loginpage.html","_self")
 }
 
+function cartPage(){
+  window.open("./cart.html","_self")
+}
+
+function indexPageLink() {
+  window.open("./index.html","_self")
+}
+
 buttons.forEach(button => {
     button.addEventListener("click", () => {
       const offset = button.dataset.carouselButton === "next" ? 1 : -1

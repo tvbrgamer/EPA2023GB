@@ -6,46 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1IKE - Página Inicial</title>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/loginpage.css">
+    <link rel="stylesheet" href="./css/cart.css">
 </head>
 <body>
     <header> <!--Cabeçalho da página-->
         <a href="index.html"><img src="./img/like_logo.png" alt="L1ke-Logo" class="logo"></a> <!--Logo-->
+        <div class="SearchBox"> <!--Barra de pesquisas-->
+            <form>
+                <input type="submit" value=" " class="SearchBoxButton">
+                <input type="text" placeholder="Pesquise Aqui..." class="SearchBoxText">
+            </form>
+        </div>
+        <button type="button" id="userBox" onclick="loginPage()"> <!--Botão do usuário/login-->
+            Faça seu login
+        </button>
     </header>
     <section>
-        <div class="loginBox">
-            <h1 id="titleH1">Entrar<hr></h1>
-            
-            <form>
-                <div class="inputs">
-                    <div class="inputArea">
-                        <input type="email" id="emailField" placeholder="Email...">
+        <div class="cartProdArea">
+            <div class="cartArea">
+                <h1>Meu Carrinho</h1>
+                <div class="cartProd">
+                    <img src="./img/menprod/shoe01.jpg" alt="" class="cartProdImg">
+                    <div class="cartText">
+                    <h2>Tênis Casual Masculino</h2>
+                    <p>Cor:Preto</p>
+                    <p>Tamanho:41</p>
                     </div>
-                    <div class="inputArea">
-                        <input type="password" id="passwordField" placeholder="Senha...">
-                    </div>
-                    <button class="buttonGroup" onclick="indexPageLink()">Logar</button>
                 </div>
-            </form>
-            
-        </div>
-        <div class="singupBox">
-            <h1 id="titleH1">Criar Conta<hr></h1>
-            <form>
-                <div class="inputs">          
-                    <div class="inputArea">
-                        <input type="text" id="nameField" placeholder="Nome...">
-                    </div>
-                    <div class="inputArea">
-                        <input type="email" id="emailField" placeholder="Email...">
-                    </div>
-                    <div class="inputArea">
-                        <input type="password" id="passwordField" placeholder="Senha...">
-                    </div>  
-                    <button class="buttonGroup">Criar Conta</button> 
+                <hr class="line">
+                <div class="cartQuant">
+                <h1><span class="oldPrice">R$210,99</span> $159,51</h1>
+                </div>            
+            </div>
+            <div class="checkinArea">
+                <h1>Resumo da Compra</h1>
+                <h3>Subtotal: <span class="price"> R$159,51</span></h3>
+                <hr>
+                <h3>Cupom de desconto: <span class="discount"><a href="">Adicionar</a></span></h3>
+                <hr>
+                <h3>Valor Total : <span class="price"> R$159,51</span><br>
+                <div class="checkinAreaButtons">
+                    <button>Finalizar</button><br>
+                    <button onclick="indexPageLink()">Escolher Mais Produtos</button>
                 </div>
-  
-            </form>
+            </div>
         </div>
     </section>
     <footer>
@@ -73,6 +77,6 @@
                 <p>1IKE AJIVS. Todos os direitos reservados &copy;2023</p>
             </div>
     </footer>
-    <script src="./js/loginPage.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
