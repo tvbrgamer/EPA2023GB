@@ -248,6 +248,41 @@ footer {
 
 }
 
+#twitterLink {
+    margin-right: 5%;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(245, 222, 179, 0);
+    width: 4vh;
+    height: 4vh;
+    background-image: url(../img/twitterLogo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#twitterLink:hover {
+    background-image: url(../img/twitterLogoWhite.png);
+    transition: .2s;
+}
+
+
+#facebookLink{
+    margin-right: 5%;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(245, 222, 179, 0);
+    width: 4vh;
+    height: 4vh;
+    background-image: url(../img/facebookLogo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#facebookLink:hover{
+    background-image: url(../img/facebookLogoWhite.png);
+    transition: .2s;
+}
+
 #instagramlink {
     margin-right: 5%;
     cursor: pointer;
@@ -472,6 +507,10 @@ a {
     flex-direction: row;
 }
 
+.slide > .promoProducts {
+    height: 105%;
+}
+
 .slide a {
     background-color: rgba(255, 255, 255, 1);
     z-index: 2;
@@ -557,11 +596,13 @@ form {
     }
 
     #cartBox {
+        height: 15vw;
         margin-top: 5vw;
         font-size: 1vh;
         background-size: 3vh;
     }
     #userBox {
+        height: 15vw;
         margin-top: 5vw;
         font-size: 1vh;
         background-size: 3vh;
@@ -569,7 +610,6 @@ form {
     header a {
          width: 15%;
     }
-
     input,input::placeholder {
     font: 3vw/3 sans-serif;
     }
@@ -578,6 +618,8 @@ form {
         width: 85%;
         height: 50%;
     }
+
+
     .SearchBoxButton {
         height: 100%;
         left: 4%;
@@ -673,5 +715,14 @@ form {
     .copyrow {
         padding-top: 1vh;
         font-size: 1.5vh;
+        background-color: #162F33;
+        width: 100%;
+        height: 30%;
+    }
+    .promoProductsLink h5 {
+        font-size: 2.5vw;
+    }
+    .promoProductsLink h4 {
+        font-size: 2.3vw;
     }
 }

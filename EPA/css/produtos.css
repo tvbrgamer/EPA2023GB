@@ -3,6 +3,8 @@ body {
     min-height: 100vh;
 }
 
+
+
 #product-Container {
     background-color: white;
     margin-top: 2%;
@@ -396,4 +398,42 @@ footer {
 
 .fontBlue {
     color: rgb(25, 131, 170);
+}
+
+form {
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-height: 700px), (orientation: portrait)  {
+    #leftDiv {
+        padding-top: 20vh;
+    }
+    #imagesDiv {
+        position: relative;
+        left: -30%;
+
+    }
+    #mainImage{
+        position: relative;
+        top: -20%;
+        height: 10vh;
+        width: 10vh;
+        
+
+    }
+    #previewImages-Container {
+        height: 0;
+        width: 0;
+        background: 0;
+        position: absolute;
+        right: 50000000px;
+    }
+    #rightDiv{
+        position: relative;
+       display: flex;
+       top: -25%;
+       height: 85%;
+       width: 100%;
+    }
 }
